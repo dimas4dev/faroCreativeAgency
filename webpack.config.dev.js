@@ -16,6 +16,7 @@ module.exports = {
       "@assets": path.resolve(__dirname, "src/assets"),
       "@redux": path.resolve(__dirname, "src/redux"),
       "@routes": path.resolve(__dirname, "src/routes"),
+      "@source": path.resolve(__dirname, "src"),
     },
   },
   module: {
@@ -36,13 +37,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.css|.styl$/,
+        test: /\.css|.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
           "css-loader",
-          "stylus-loader",
+          "sass-loader",
         ],
       },
       {
