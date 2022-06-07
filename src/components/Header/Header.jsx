@@ -11,22 +11,18 @@ const Header = () => {
     <header className="header">
       <nav className="nav">
         <section className="header-logos">
-          <ul>
-            <li>
-              <img
-                className="header-logos--size"
-                src={LogoFaro}
-                alt="Logo Faro"
-              />
-            </li>
-            <li>
-              <img
-                className="header-logos--size"
-                src={LogoFPC}
-                alt="Logo FPC"
-              />
-            </li>
-          </ul>
+          <div className="header--images">
+            <img
+              className="header-logos--size"
+              src={LogoFaro}
+              alt="Logo Faro"
+            />
+
+            <img className="header-logos--size " src={LogoFPC} alt="Logo FPC" />
+          </div>
+          <div className="header--title">
+            <h1>Faro Agencia Creativa</h1>
+          </div>
         </section>
         <div className="nav__container">
           <label htmlFor="menu" className="nav__label">
