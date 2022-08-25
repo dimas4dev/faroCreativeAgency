@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    // publicPath: path.join(__dirname, "dist"),
   },
   mode: "development",
   resolve: {
@@ -47,7 +48,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|gif|jpg|svg|ico)$/,
+        test: /\.(png|gif|jpg|jpeg|svg|ico)$/,
         type: "asset",
       },
     ],

@@ -3,9 +3,7 @@ import React from "react";
 export const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__title">
-        <p>Unete a Nosotros</p>
-      </div>
+      <p className='footer__title'>Unete a Nosotros</p>
       <div className="footer__content">
         <div className="footer__content--left">
           <p>Contactanos</p>
