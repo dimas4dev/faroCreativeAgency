@@ -1,12 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 /** Fonts Typography 
 ** First: Train One
 */
 @import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap");
+
 /** Components Stylesheets */
 @import "./assets/styles/components/Header/Header.scss";
 @import "./assets/styles/components/Carousel/Carousel.scss";
