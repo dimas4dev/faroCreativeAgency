@@ -19,6 +19,7 @@ module.exports = {
       "@redux": path.resolve(__dirname, "src/redux"),
       "@routes": path.resolve(__dirname, "src/routes"),
       "@source": path.resolve(__dirname, "src"),
+      "@pages": path.resolve(__dirname, "src/pages"),
     },
   },
   module: {

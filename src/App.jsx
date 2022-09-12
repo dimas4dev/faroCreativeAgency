@@ -1,17 +1,18 @@
 import React from "react";
+import { BrowserRouter } from 'react-router-dom';
 
-import { Header } from "@components/Header/Header";
+import { AppRoutes } from "@source/AppRoutes"
+
+
 
 import "@source/App.scss";
-import { CarouselComponent } from "@components/Carousel/Carousel";
-import { Footer } from "@components/Footer/Footer";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <CarouselComponent />
-      <Footer />
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </>
   );
 };

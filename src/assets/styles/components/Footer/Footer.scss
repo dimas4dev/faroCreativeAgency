@@ -6,8 +6,9 @@
   flex-direction: column;
   z-index: 1;
   font-family: "Jost", sans-serif;
-  position: relative;
-
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
   &__title {
     margin: 0;
     letter-spacing: 1.5rem;
