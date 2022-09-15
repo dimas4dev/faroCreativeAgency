@@ -5,21 +5,26 @@ const Directors = () => {
 
     const arrayDirectors = [{
         name: "Jeison Bolivar",
-        job: "Ceo Global"
+        job: "Ceo Global",
+        urlImage: "https://faropsicopedagogia.org/wp-content/uploads/Anny-Jeisson.png"
 
     },
     {
         name: "Mallerly Romero",
-        job: "Directora de Cuentas"
+        job: "Directora de Cuentas",
+        urlImage: "https://faropsicopedagogia.org/wp-content/uploads/Anny-Jeisson.png"
+
     },
     {
         name: "Sebastian",
-        job: "Copy Creativo"
+        job: "Copy Creativo",
+        urlImage: "https://faropsicopedagogia.org/wp-content/uploads/Anny-Jeisson.png"
+
     }]
     return (
         <>
             <section className="directors">
-                <Director />
+                <Director Directors={arrayDirectors} />
             </section>
         </>
     )

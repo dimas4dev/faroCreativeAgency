@@ -14,10 +14,12 @@ function AppRoutes() {
     return (
         <>
             <Header />
-            <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/our-directors" element={<Directors />} />
-            </Routes>
+            <main className="main">
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/our-directors" element={<Directors />} />
+                </Routes>
+            </main>
             <Footer />
         </>
     );

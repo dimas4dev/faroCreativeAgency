@@ -1,17 +1,22 @@
 import React from 'react'
 
-const Director = ({ name, job }) => {
+const Director = (props) => {
+    const { Directors } = props
     return (
-        <section className="director">
-            <article className="director__card">
-                <h2 className="director__card__title">Jeison Bolivar</h2>
-                <figure className="director__card__image">
-                    <img src="https://faropsicopedagogia.org/wp-content/uploads/Anny-Jeisson.png" alt="" />
-                    <figcaption>CEO Global</figcaption>
-                </figure>
-            </article>
+        <>
+            {Directors.map((element, index) => (
+                <section className="director" key={index}>
+                    <article className="director__card">
+                        <h2 className="director__card__title">{element.name}</h2>
+                        <figure className="director__card__image">
+                            <img src={element.urlImage} alt="" />
+                            <figcaption className="director__card__image--job">CEO Global</figcaption>
+                        </figure>
+                    </article>
+                </section>
+            ))}
+        </>
 
-        </section>
     )
 }
 

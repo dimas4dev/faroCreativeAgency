@@ -1,7 +1,7 @@
 @import "../../variables";
 .footer {
   display: flex;
-  max-height: 300px;
+  max-height: 20vh;
   background-image: url("assets/images/AREA_FIJA_PAGINA/FONDO_ROSA.svg");
   flex-direction: column;
   z-index: 1;
@@ -22,45 +22,8 @@
   &__content {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     z-index: 2;
     color: $white;
-    &--left {
-      padding-left: 20px;
-      p {
-        margin: 0;
-      }
-    }
-    &--right {
-      padding-right: 20px;
-    }
   }
 }
-.footer::before {
-  content: url("assets/images/AREA_FIJA_PAGINA/BURBUJAS_IZQUIERDA.svg");
-  width: 130px;
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  left: 0;
-}
-.footer::before {
-  content: url("assets/images/AREA_FIJA_PAGINA/BURBUJAS_IZQUIERDA.svg");
-  // width: 140px;
-  z-index: 1;
-  position: absolute;
-  // height: 100%;
-  left: 0;
-  object-fit: contain;
-}
-.footer::after {
-  content: url("assets/images/AREA_FIJA_PAGINA/BURBUJAS_PROYECTOS.svg");
-  // width: 280px;
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  right: 0;
-  bottom: 0;
-}
-
-//brp crack

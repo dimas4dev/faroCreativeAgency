@@ -1,8 +1,24 @@
+img {
+  width: 200px;
+  height: 400px;
+}
+
 .director {
-  width: 100vw;
-  height: 100vh;
+  font-family: "Jost", sans-serif;
+  background-color: $white;
+  margin-right: 12px;
   &__card {
-    width: 200px;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__image {
+      display: inherit;
+      flex-direction: inherit;
+      align-items: inherit;
+      &--job {
+        margin: 12px 0px 4px 0;
+      }
+    }
   }
 }
