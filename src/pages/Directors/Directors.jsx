@@ -1,5 +1,5 @@
-import { Director } from '@components/Director/Director'
 import React from 'react'
+import { Director } from '@components/Director/Director'
 
 const Directors = () => {
 
