@@ -1,0 +1,19 @@
+.goal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-family: "Jost", sans-serif;
+  &__image {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+  }
+  &__description {
+    width: 50vw;
+    &--title {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  }
+}
