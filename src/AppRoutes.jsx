@@ -10,6 +10,7 @@ import { Directors } from '@pages/Directors/Directors';
 import { Companies } from '@pages/Companies/Companies';
 import { Goal } from "@pages/Goal/Goal"
 import { DesingInfo } from '@pages/DesingInfo/DesingInfo';
+import { OurOffers } from '@pages/OurOffers/OurOffers';
 
 
 
@@ -24,6 +25,8 @@ function AppRoutes() {
                     <Route path="/our-companies-support" element={<Companies />} />
                     <Route path="/our-goal" element={<Goal />} />
                     <Route path="desing-info" element={<DesingInfo />} />
+                    <Route path="our-offers" element={<OurOffers />} />
+
 
 
                 </Routes>
