@@ -1,41 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  overflow-y: hidden;
-}
-#app {
-  height: 100vh;
-  max-height: 100vh;
-}
-.main {
-  max-height: 80vh;
-  height: 80vh;
+
 }
 
-/** Fonts Typography 
-** First: Train One
-*/
-@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap");
-
-/** Components Stylesheets */
-@import "./assets/styles/components/Header/Header.scss";
-@import "./assets/styles/components/Carousel/Carousel.scss";
-@import "./assets/styles/components/Footer/Footer.scss";
-@import "./assets/styles/pages/Directors/Directors.scss";
-@import "./assets/styles/components/Director/Director.scss";
-@import "./assets/styles/pages/Companies/Companies.scss";
-@import "./assets/styles/components/CompanyCard/CompanyCard.scss";
-@import "./assets/styles/pages/Goal/Goal.scss";
-@import "./assets/styles/pages/DesingInfo/DesingInfo.scss";
-@import "./assets/styles/components/Offer/Offer.scss";
-@import "./assets/styles/pages/OurOffers/OurOffers.scss";
-@import "./assets/styles/pages/SocialMediaContent/SocialMediaContent.scss";
-@import "./assets/styles/pages/SocialMediaAdvertising/SocialMediaAdvertising.scss";
-@import "./assets/styles/pages/GoogleAds/GoogleAds.scss";
-@import "./assets/styles/pages/WebAnalitycs/WebAnalytics.scss";
-@import "./assets/styles/pages/Advisory/Advisory.scss";
-@import "./assets/styles/pages/SEO/SEO.scss";
-@import "./assets/styles/pages/EmailMarketing/EmailMarketing.scss";
-@import "./assets/styles/pages/WebDevelopment/WebDevelopment.scss";
