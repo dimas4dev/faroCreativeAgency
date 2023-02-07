@@ -18,6 +18,7 @@ module.exports = {
       "@assets": path.resolve(__dirname, "src/assets"),
       "@redux": path.resolve(__dirname, "src/redux"),
       "@routes": path.resolve(__dirname, "src/routes"),
+      "@source": path.resolve(__dirname, "src"),
     },
   },
   module: {
@@ -48,7 +49,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|gif|jpg|svg|ico)$/,
+        test: /\.(png|gif|jpg|jpeg|svg|ico)$/,
         type: "asset/resource",
       },
     ],

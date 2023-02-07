@@ -8,7 +8,8 @@
       "@pages/*": ["src/pages/*"],
       "@utils/*": ["src/utils/*"],
       "@assets/*": ["src/assets/*"],
-      "@routes/*": ["src/routes/*"]
+      "@routes/*": ["src/routes/*"],
+      "@source/*": ["src/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

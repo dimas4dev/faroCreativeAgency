@@ -2,11 +2,13 @@ const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    // publicPath: path.join(__dirname, "dist"),
   },
   mode: "development",
   resolve: {
@@ -16,6 +18,8 @@ module.exports = {
       "@assets": path.resolve(__dirname, "src/assets"),
       "@redux": path.resolve(__dirname, "src/redux"),
       "@routes": path.resolve(__dirname, "src/routes"),
+      "@source": path.resolve(__dirname, "src"),
+      "@pages": path.resolve(__dirname, "src/pages"),
     },
   },
   module: {
@@ -36,17 +40,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.css|.styl$/,
+        test: /\.css|.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
           "css-loader",
-          "stylus-loader",
+          "sass-loader",
         ],
       },
       {
-        test: /\.(png|gif|jpg|svg|ico)$/,
+        test: /\.(png|gif|jpg|jpeg|svg|ico)$/,
         type: "asset",
       },
     ],
@@ -66,6 +70,14 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "assets/[name].css",
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src", "assets/images"),
+          to: "assets/images",
+        },
+      ],
     }),
   ],
 };
