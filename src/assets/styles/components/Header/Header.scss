@@ -1,36 +1,48 @@
-header {
-    height: 70px;
-    width: 100%;
-}
+.header {
+  height: 70px;
+  width: 100%;
+  font-family: "FuturaMdBTBold", sans-serif;
 
-header ul {
+  &__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
     list-style: none;
+
+    .listPrincipalElement {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .logoFPC {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
 }
 
-header ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+.listSecondary {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-header ul li ul {
-    width: 100%;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  gap: 40px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  &__element {
+    list-style: none;
+  }
 
+  .listSecondary__Url {
     font-weight: 400;
     color: black;
     text-decoration: none;
-}
-
-header ul li ul li a {
-    font-weight: 400;
-    color: black;
-    text-decoration: none;
+    font-size: 1.25rem;
+  }
 }

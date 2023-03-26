@@ -1,30 +1,35 @@
-import React from 'react'
+import React from "react";
+
+import FaroLogo from "@assets/images/LogoFPC.png";
 
 const Header = () => {
   return (
     <>
       <header className="header">
-        <ul>
-          <li>Faro Agencia Creativa</li>
-          <li>
-            <ul>
-              <li>
-                <a href="#home">
+        <ul className="header__list">
+          <li className="listPrincipalElement">
+            <img className="logoFPC" src={FaroLogo} alt="" />
+            <h1 className="FPCTitle">Faro Agencia Creativa</h1>
+          </li>
+          <li className="listPrincipalElement">
+            <ul className="listSecondary">
+              <li className="listSecondary__element">
+                <a className="listSecondary__Url" href="#home">
                   Home
                 </a>
               </li>
-              <li>
-                <a href="#quienes-somos">
+              <li className="listSecondary__element">
+                <a className="listSecondary__Url" href="#quienes-somos">
                   Quienes Somos
                 </a>
               </li>
-              <li>
-                <a href="#nuestros-servicios">
+              <li className="listSecondary__element">
+                <a className="listSecondary__Url" href="#nuestros-servicios">
                   Nuestros servicios
                 </a>
               </li>
-              <li>
-                <a href="#contactanos">
+              <li className="listSecondary__element">
+                <a className="listSecondary__Url" href="#contactanos">
                   Contactanos
                 </a>
               </li>
@@ -33,6 +38,6 @@ const Header = () => {
         </ul>
       </header>
     </>
-  )
-}
-export default Header
+  );
+};
+export default Header;

@@ -53,6 +53,16 @@ module.exports = {
         test: /\.(png|gif|jpg|jpeg|svg|ico)$/,
         type: "asset",
       },
+      {
+        test: /\.(woff|woff2)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: "fonts/",
+          },
+        },
+      },
     ],
   },
   devServer: {
@@ -76,6 +86,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, "src", "assets/images"),
           to: "assets/images",
+        },
+        {
+          from: path.resolve(__dirname, "src", "assets/Fonts"),
+          to: "assets/Fonts",
         },
       ],
     }),
