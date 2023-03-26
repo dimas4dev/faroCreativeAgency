@@ -1,0 +1,41 @@
+.HomeComponent {
+  display: flex;
+  justify-content: space-around;
+
+  &__text {
+    font-family: "FuturaMdBTBold", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .HomeTitle {
+      font-size: 3rem;
+    }
+
+    .HomeDescription {
+      font-size: 1.25rem;
+      text-align: left;
+    }
+
+    .HomeCTA {
+      width: 200px;
+      height: 70px;
+      border-radius: 60px;
+      border: 0;
+      background-color: $CTAColor;
+      font-size: 1.25rem;
+      color: white;
+    }
+  }
+
+  &__image {
+    width: 700px;
+    margin-right: 0;
+
+    .MainImage {
+      width: 100%;
+      border-radius: 0 0 0 200px;
+    }
+  }
+}
