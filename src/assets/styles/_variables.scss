@@ -1,7 +1,9 @@
+$CTAColor: #19957d;
+$white: #ffffff;
+
 @font-face {
-    font-family: 'FutuBd';
-    src: url('../Fonts/FutuBd.ttf') format('woff2'),
-      url('fonts/opensans-light.woff') format('woff');
-    font-style: normal;
-    font-weight: 300;
-  }
+  font-family: "FuturaMdBTBold";
+  src: url("assets/Fonts/FuturaMdBTBold.woff2") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
