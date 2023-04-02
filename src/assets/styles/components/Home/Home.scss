@@ -3,11 +3,18 @@
   justify-content: space-around;
 
   &__text {
+    width: 495px;
     font-family: "FuturaMdBTBold", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .CTA {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+    }
 
     .HomeTitle {
       font-size: 3rem;

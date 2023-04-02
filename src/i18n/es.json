@@ -1,0 +1,37 @@
+{
+  "HomeComponent": {
+    "title": "Somos Faro Agencia Creativa",
+    "description": "No solo creemos en tu potencial y excelencia, sino te impulsamos a mejorar e iniciar tus sueños con nuestra asistencia",
+    "CTAButton": "¿Quieres saber más?"
+  },
+  "OurSponsors": {
+    "title": "Nuestro Recorrido Con Los Osados",
+    "description": "Te presento a quienes se han atrevido y han triunfado al creer en nuestros servicios."
+  },
+  "OurServicies": {
+    "title": "¿Conoces Nuestro Portafolio De Servicios?",
+    "description": "La innovación y el beneficio al alcance de tus manos",
+    "services": [
+      {
+        "titleService": "Diseño Web",
+        "descriptionService": "Creamos tu imágen digital, y apoyamos tu visibilidad"
+      },
+      {
+        "titleService": "Marketing Digital",
+        "descriptionService": "Enfocamos tu contenido digital a tus metas, ventas e ideas de negocio"
+      },
+      {
+        "titleService": "Manejo De Redes Sociales",
+        "descriptionService": "Fortalecemos tu presencia digital y diversificamos el contenido de tus redes"
+      }
+    ]
+  },
+  "OurAmazing": {
+    "title": "Lo más sobresaliente con nosotros",
+    "description": "Fortalecemos tu presencia digital y diversificamos el contenido de tus redes"
+  },
+  "OurTestimonials": {
+    "title": "Conoce Algunos Testimonios Y Referencias",
+    "description": "Estos son solo algunos de nuestros testimonios y agradecimientos sobre nuestro trabajo."
+  }
+}
