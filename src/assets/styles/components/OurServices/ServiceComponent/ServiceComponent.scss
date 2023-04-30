@@ -1,0 +1,45 @@
+.Service {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 308px;
+  height: 379px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+  text-align: center;
+
+  .title {
+    font-size: 1.7rem;
+  }
+  .description {
+    font-size: 1rem;
+    margin: 12px;
+    text-align: center;
+  }
+
+  .IconBackground {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: #f3dbfa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Icon {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  .Service-BoxSearchIcon {
+    background-color: #f3dbfa;
+  }
+  .Service-WalletIcon {
+    background-color: #faf4e1;
+  }
+  .Service-WebIcon {
+    background-color: #f9dede;
+  }
+}
