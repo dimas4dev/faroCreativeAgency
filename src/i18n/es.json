@@ -33,5 +33,29 @@
   "OurTestimonials": {
     "title": "Conoce Algunos Testimonios Y Referencias",
     "description": "Estos son solo algunos de nuestros testimonios y agradecimientos sobre nuestro trabajo."
-  }
+  },
+  "OurServices": {
+    "title": "¿Conoces nuestro portafolio de servicios?",
+    "description": "La innovación y el beneficio al alcance de tus manos."
+  },
+  "Services": [
+    {
+      "title": "Diseño Web",
+      "description": "Creamos tu imágen digital, y apoyamos tu visibilidad.",
+      "image": "BoxSearchIcon",
+      "color": "#F3DBFA"
+    },
+    {
+      "title": "Manejo De Redes Sociales",
+      "description": "Creamos tu imágen digital, y apoyamos tu visibilidad.",
+      "image": "WalletIcon",
+      "color": "#FAF4E1"
+    },
+    {
+      "title": "Marketing Digital",
+      "description": "Enfocamos tu contenido digital a tus metas, ventas e ideas de negocio.",
+      "image": "WebIcon",
+      "color": "#F9DEDE"
+    }
+  ]
 }
