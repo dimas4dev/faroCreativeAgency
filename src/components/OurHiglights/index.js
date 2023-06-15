@@ -11,9 +11,8 @@ const OurHiglights = () => {
           height="315"
           src="https://www.youtube.com/embed/OVgyTgi2nGs"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
       <div className="OurHiglights__Text">

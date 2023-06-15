@@ -13,6 +13,7 @@ const OurServices = ({ text }) => {
       <article className="ourServices__description">
         {esLang.Services.map((value, id) => (
           <ServiceComponent
+            key={`ServiceComponent-${id}`}
             id={`ServiceComponent-${id}`}
             title={value.title}
             description={value.description}
