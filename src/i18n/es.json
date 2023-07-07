@@ -57,5 +57,15 @@
       "image": "WebIcon",
       "color": "#F9DEDE"
     }
-  ]
+  ],
+  "Contact":{
+    "title":"Aquí estamos",
+    "description":"¿Quieres saber más sobre nosotros? ¿Tienes alguna duda? ¿Quieres iniciar un proyecto con nosotros? ¡Contáctanos!",
+    "form":{
+      "name":"Ingresa tu Nombre",
+      "email":"Ingresa tu Correo Electrónico",
+      "message":"Danos más detalles sobre tu proyecto",
+      "button":"Envía tu petición"
+    }
+  }
 }

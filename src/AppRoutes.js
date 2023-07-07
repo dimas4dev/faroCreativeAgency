@@ -8,6 +8,7 @@ import esLang from "@source/i18n/es.json";
 import OurServices from "@components/OurServices/index";
 import OurHiglights from "@components/OurHiglights/index";
 import OurTestimonials from "@components/OurTestimonials/index";
+import Contact from "@components/Contact/index";
 
 function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ function AppRoutes() {
       <OurServices text={esLang.OurServices} />
       <OurHiglights text={esLang.OurHiglights} />
       <OurTestimonials text={esLang.OurTestimonials} />
+      <Contact text={esLang.Contact} />
     </>
   );
 }
