@@ -58,14 +58,41 @@
       "color": "#F9DEDE"
     }
   ],
-  "Contact":{
-    "title":"Aquí estamos",
-    "description":"¿Quieres saber más sobre nosotros? ¿Tienes alguna duda? ¿Quieres iniciar un proyecto con nosotros? ¡Contáctanos!",
-    "form":{
-      "name":"Ingresa tu Nombre",
-      "email":"Ingresa tu Correo Electrónico",
-      "message":"Danos más detalles sobre tu proyecto",
-      "button":"Envía tu petición"
+  "Contact": {
+    "title": "Aquí estamos",
+    "description": "¿Quieres saber más sobre nosotros? ¿Tienes alguna duda? ¿Quieres iniciar un proyecto con nosotros? ¡Contáctanos!",
+    "form": {
+      "name": "Ingresa tu Nombre",
+      "email": "Ingresa tu Correo Electrónico",
+      "message": "Danos más detalles sobre tu proyecto",
+      "button": "Envía tu petición"
+    }
+  },
+  "Footer": {
+    "title": "Somos Faro Agencia Creativa",
+    "description": "No solo creemos en tu potencial y excelencia, sino te impulsamos a mejorar e iniciar tus sueños con nuestra asistencia",
+    "columnWhatWeDo": {
+      "title": "Que Hacemos",
+      "items": [
+        "Diseño Web",
+        "Manejo De Redes Sociales",
+        "Marketing Digital"
+      ]
+    },
+    "columAboutUs": {
+      "title": "Acerca de Nosotros",
+      "items": [
+        "Our Page"
+      ]
+    },
+    "columnContact": {
+      "title": "Contacto",
+      "items": [
+        "Whatsapp",
+        "Instagram",
+        "Facebook",
+        "Twitter"
+      ]
     }
   }
 }

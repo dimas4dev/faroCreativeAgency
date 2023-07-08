@@ -20,7 +20,7 @@ const Contact = ({ text }) => {
           <p>{description}</p>
         </div>
         <div className="contact__form">
-          <div class="contact__form-bg"></div>
+          <div className="contact__form-bg"></div>
           <Formik
             initialValues={{ nombre: '', correo: '', mensaje: '' }}
             onSubmit={handleSubmit}
