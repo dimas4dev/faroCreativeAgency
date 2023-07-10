@@ -1,15 +1,28 @@
-import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-
-
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ text }) => {
-
   const { title, description, form } = text;
+  const EMAILSERVICE = process.env.EMAILSERVICE;
+  const EMAILTEMPLATE = process.env.EMAILTEMPLATE;
+  const EMAILKEY = process.env.EMAILKEY;
 
-  const handleSubmit = (values) => {
-    // Aquí puedes agregar la lógica para enviar el formulario
-    console.log(form);
+  const [templateParams, setTemplateParams] = useState({ to_name: '', from_name: '', message: '' });
+
+  const handleChange = (e) => {
+    setTemplateParams({ ...templateParams, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(templateParams);
+    emailjs.send(EMAILSERVICE, EMAILTEMPLATE, templateParams, EMAILKEY)
+      .then((result) => {
+        console.log(result.text);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
   };
 
   return (
@@ -21,36 +34,19 @@ const Contact = ({ text }) => {
         </div>
         <div className="contact__form">
           <div className="contact__form-bg"></div>
-          <Formik
-            initialValues={{ nombre: '', correo: '', mensaje: '' }}
-            onSubmit={handleSubmit}
-
-          >
-            <Form
-              className="form">
-              {/* Agrega tus campos de formulario utilizando el componente Field */}
-              <div className="input">
-                <Field type="text" id="nombre" name="nombre" placeholder={form.name} />
-                <ErrorMessage name="nombre" component="div" />
-              </div>
-
-              <div className="input">
-                <Field type="email" id="correo" name="correo" placeholder={form.email} />
-                <ErrorMessage name="correo" component="div" />
-              </div>
-
-              <div className="input">
-                <Field as="textarea" id="mensaje" name="mensaje" placeholder={form.message} />
-                <ErrorMessage name="mensaje" component="div" />
-              </div>
-
-              <button className='submitButton' type="submit">{form.button}</button>
-            </Form>
-          </Formik>
+          <form className='form' onSubmit={handleSubmit}>
+            <div className="input">
+              <input type="text" id="nombre" name="to_name" placeholder={form.name} onChange={handleChange} />
+            </div>
+            <div className="input">
+              <input type="email" id="correo" name="from_name" placeholder={form.email} onChange={handleChange} />
+            </div>
+            <div className="input">
+              <textarea id="mensaje" name="message" placeholder={form.message} onChange={handleChange}></textarea>
+            </div>
+            <button className='submitButton' type="submit">{form.button}</button>
+          </form>
         </div>
-
-
-
       </div>
     </section>
   );

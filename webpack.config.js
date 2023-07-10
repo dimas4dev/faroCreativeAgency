@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CSSMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: "./src/index.js",
@@ -64,6 +65,7 @@ module.exports = {
       filename: "assets/[name].css",
     }),
     new CleanWebpackPlugin(),
+    new Dotenv(),
   ],
   optimization: {
     minimize: true,
