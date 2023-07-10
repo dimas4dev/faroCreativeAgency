@@ -77,21 +77,50 @@
         "Diseño Web",
         "Manejo De Redes Sociales",
         "Marketing Digital"
+      ],
+      "itemsBro": [
+        {
+          "nameSocialMedia": "Whatsapp",
+          "redirectUrl": "https://api.whatsapp.com/send?phone=573508204075&text=Hola%20Faro%20Agencia%20Creativa%20vengo%20de%20su%20pagina%20web."
+        },
+        {
+          "nameSocialMedia": "Instagram",
+          "redirectUrl": "https://www.instagram.com/faroagenciacreativa/"
+        },
+        {
+          "nameSocialMedia": "Facebook",
+          "redirectUrl": "https://www.facebook.com/faroagenciacreativa/"
+        },
+        {
+          "nameSocialMedia": "Twitter",
+          "redirectUrl": "https://twitter.com/faroagenciacr"
+        }
       ]
     },
     "columAboutUs": {
       "title": "Acerca de Nosotros",
       "items": [
-        "Our Page"
+        {
+          "title": "Nuestra Pagina",
+          "redirectUrl": "https://faropsicopedagogia.org"
+        }
       ]
     },
     "columnContact": {
       "title": "Contacto",
       "items": [
-        "Whatsapp",
-        "Instagram",
-        "Facebook",
-        "Twitter"
+        {
+          "nameSocialMedia": "Whatsapp",
+          "redirectUrl": "https://api.whatsapp.com/send?phone=573508204075&text=Hola%20Faro%20Agencia%20Creativa%20vengo%20de%20su%20pagina%20web."
+        },
+        {
+          "nameSocialMedia": "Instagram",
+          "redirectUrl": "https://www.instagram.com/faropsicopedagogia/"
+        },
+        {
+          "nameSocialMedia": "Facebook",
+          "redirectUrl": "https://www.facebook.com/faropsicopedagogiaglobal/"
+        }
       ]
     }
   }

@@ -1,11 +1,14 @@
 import React from "react"
 
 import FaroLogo from "@assets/images/LogoFPCBlanco.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+
 
 
 const Footer = ({ text }) => {
 
-    const { title, description, columnWhatWeDo } = text;
+    const { title, description, columnWhatWeDo, columAboutUs, columnContact } = text;
 
     return (
         <footer>
@@ -17,35 +20,30 @@ const Footer = ({ text }) => {
                             <h3>{title}</h3>
                         </div>
                         <p>{description}</p>
+                        <ul className="social-icons">
+                            <li><a href="#"><FontAwesomeIcon icon={faFacebook} style={{ fontSize: '32px' }} /></a></li>
+                            <li><a href="#"><FontAwesomeIcon icon={faTwitter} style={{ fontSize: '32px' }} /></a></li>
+                            <li><a href="#"><FontAwesomeIcon icon={faInstagram} style={{ fontSize: '32px' }} /></a></li>
+                        </ul>
                     </div>
-                    <ul className="social-icons">
-                        <li><a href="#"><i className="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                    </ul>
                 </div>
                 <div className="column">
                     <h3>{columnWhatWeDo.title}</h3>
                     <ul>
-                        <li><a href="#">Enlace 1</a></li>
-                        <li><a href="#">Enlace 2</a></li>
-                        <li><a href="#">Enlace 3</a></li>
+                        {columnWhatWeDo.items.map((item, index) => (<li key={`WhatWeDo-${index}`}><p style={{ padding: 0 }}>{item}</p>  </li>))}
                     </ul>
                 </div>
                 <div className="column">
-                    <h3>Columna 2</h3>
+                    <h3> {columAboutUs.title}</h3>
                     <ul>
-                        <li><a href="#">Enlace 1</a></li>
-                        <li><a href="#">Enlace 2</a></li>
-                        <li><a href="#">Enlace 3</a></li>
+                        {columAboutUs.items.map((item, index) => (<li key={`AboutUs-${index}`}><a target="_blank" href={item.redirectUrl}>{item.title}</a></li>))}
+
                     </ul>
                 </div>
                 <div className="column">
-                    <h3>Columna 3</h3>
+                    <h3> {columnContact.title}</h3>
                     <ul>
-                        <li><a href="#">Enlace 1</a></li>
-                        <li><a href="#">Enlace 2</a></li>
-                        <li><a href="#">Enlace 3</a></li>
+                        {columnContact.items.map((item, index) => (<li key={`SocialMedia-${index}`}><a target="_blank" href={item.redirectUrl}>{item.nameSocialMedia}</a></li>))}
                     </ul>
                 </div>
             </div>
